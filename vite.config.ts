@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
   base: "/JordanAATravel/", // Musi być zgodne z basename
   build: {
-    outDir: "dist/client", // 👈 ZMIANA - dodaj /client/
+    outDir: "dist/",
     emptyOutDir: true,
     manifest: true,
     rollupOptions: {
