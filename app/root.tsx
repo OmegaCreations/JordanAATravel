@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
 } from "react-router";
 
+import Navbar from "./components/Navbar";
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -33,7 +34,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <Navbar />
         {children}
+        {/* Stopka */}
+        <footer className="mt-16 mb-8 text-center text-gray-500 text-sm">
+          © 2025 Jordan AA Trips
+        </footer>
         <ScrollRestoration />
         <Scripts />
       </body>

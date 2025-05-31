@@ -1,0 +1,15 @@
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./herojordan.jpg");
+  background-color: black;
+
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.heroBox {
+  background-color: rgba(9, 9, 9, 0.6);
+}
