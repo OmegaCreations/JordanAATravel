@@ -26,10 +26,10 @@ const Contact = () => {
         </a>
 
         <a
-          href="mailto:info@jordantravel.com"
+          href="mailto:lana.tours2017@gmail.com"
           className="text-lg font-medium text-blue-300 underline hover:text-blue-200 transition duration-300"
         >
-          info@jordantravel.com
+          lana.tours2017@gmail.com
         </a>
       </div>
       <div className="flex mt-10 flex-col md:flex-row justify-center items-center gap-8">
