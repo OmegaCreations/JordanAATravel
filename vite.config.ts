@@ -12,7 +12,7 @@ export default defineConfig({
     manifest: true,
     rollupOptions: {
       output: {
-        assetFileNames: "assets/[name]-[hash][extname]",
+        assetFileNames: "client/assets/[name]-[hash][extname]",
       },
     },
   },
