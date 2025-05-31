@@ -5,10 +5,18 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: "/JordanAATravel/",
+  base: "/JordanAATravel/", // Musi być zgodne z basename
   build: {
-    outDir: "../dist/client",
+    outDir: "dist",
     emptyOutDir: true,
     manifest: true,
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name]-[hash].js`,
+        chunkFileNames: `assets/[name]-[hash].js`,
+        assetFileNames: `assets/[name]-[hash][extname]`,
+        manualChunks: undefined, // Wyłącz automatyczne dzielenie chunków
+      },
+    },
   },
 });

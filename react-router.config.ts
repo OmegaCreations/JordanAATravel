@@ -1,9 +1,7 @@
 import type { Config } from "@react-router/dev/config";
 
 export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: false,
+  ssr: false, // Wymagane dla GitHub Pages
   buildDirectory: "dist",
-  basename: "JordanAATravel",
+  basename: "/JordanAATravel/", // Uwaga na slashy!
 } satisfies Config;
