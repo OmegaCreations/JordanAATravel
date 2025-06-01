@@ -5,14 +5,14 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: "/JordanAATravel/", // Musi być zgodne z basename
+  base: "/JordanAATravel/client", // Musi być zgodne z basename
   build: {
     outDir: "dist/",
     emptyOutDir: true,
     manifest: true,
     rollupOptions: {
       output: {
-        assetFileNames: "client/assets/[name]-[hash][extname]",
+        assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
   },

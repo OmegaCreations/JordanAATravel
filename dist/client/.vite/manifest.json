@@ -11,7 +11,7 @@
     ]
   },
   "app/root.tsx?__react-router-build-client-route": {
-    "file": "assets/root-DbeHBbum.js",
+    "file": "assets/root-3CRNBxcM.js",
     "name": "root",
     "src": "app/root.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -20,11 +20,11 @@
       "_chunk-D4RADZKF-CBsssaMY.js"
     ],
     "css": [
-      "client/assets/root-DBj73SBY.css"
+      "assets/root-DBj73SBY.css"
     ]
   },
   "app/routes/home.tsx?__react-router-build-client-route": {
-    "file": "assets/home-MJAyjuz6.js",
+    "file": "assets/home-D3DFLvI4.js",
     "name": "home",
     "src": "app/routes/home.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -33,16 +33,16 @@
       "_chunk-D4RADZKF-CBsssaMY.js"
     ],
     "css": [
-      "client/assets/home-XEnomGcy.css"
+      "assets/home-XEnomGcy.css"
     ],
     "assets": [
-      "client/assets/anna-DUiM4K0U.jpg",
-      "client/assets/ammar-4qj2tkqV.jpg",
-      "client/assets/car1-CDRnNx4J.jpg",
-      "client/assets/car2-BRlUrQvW.jpg",
-      "client/assets/car3-DPYWqZEe.jpg",
-      "client/assets/Jordan-y9v5POLf.png",
-      "client/assets/herojordan-DSK0e3nv.jpg"
+      "assets/anna-DUiM4K0U.jpg",
+      "assets/ammar-4qj2tkqV.jpg",
+      "assets/car1-CDRnNx4J.jpg",
+      "assets/car2-BRlUrQvW.jpg",
+      "assets/car3-DPYWqZEe.jpg",
+      "assets/Jordan-y9v5POLf.png",
+      "assets/herojordan-DSK0e3nv.jpg"
     ]
   },
   "app/routes/offers.tsx?__react-router-build-client-route": {
@@ -55,8 +55,8 @@
       "_chunk-D4RADZKF-CBsssaMY.js"
     ],
     "assets": [
-      "client/assets/offer1-BNoviMAA.jpg",
-      "client/assets/hero2-DpXUIwrN.png"
+      "assets/offer1-BNoviMAA.jpg",
+      "assets/hero2-DpXUIwrN.png"
     ]
   },
   "app/routes/places.tsx?__react-router-build-client-route": {
@@ -69,107 +69,107 @@
       "_chunk-D4RADZKF-CBsssaMY.js"
     ],
     "assets": [
-      "client/assets/hero3-l2Zet2I6.jpg",
-      "client/assets/teatr_1-DE4HhRai.jpg",
-      "client/assets/teatr_2-DG10vXh_.jpg",
-      "client/assets/teatr_3-ntbva06C.jpg",
-      "client/assets/cytadela_1-CHV2FL6P.jpg",
-      "client/assets/cytadela_2-BqCqjnJ4.jpg",
-      "client/assets/cytadela_3-BQ3adZjc.jpg",
-      "client/assets/petra_1-ClXVPgmf.jpg",
-      "client/assets/petra_2-bEkig5XZ.jpg",
-      "client/assets/petra_3-BgWlijSL.jpg",
-      "client/assets/amman_1-DpyjwLBy.jpg",
-      "client/assets/amman_2-BObLp-F3.jpg",
-      "client/assets/amman_3-CrVZYRPh.jpg"
+      "assets/hero3-l2Zet2I6.jpg",
+      "assets/teatr_1-DE4HhRai.jpg",
+      "assets/teatr_2-DG10vXh_.jpg",
+      "assets/teatr_3-ntbva06C.jpg",
+      "assets/cytadela_1-CHV2FL6P.jpg",
+      "assets/cytadela_2-BqCqjnJ4.jpg",
+      "assets/cytadela_3-BQ3adZjc.jpg",
+      "assets/petra_1-ClXVPgmf.jpg",
+      "assets/petra_2-bEkig5XZ.jpg",
+      "assets/petra_3-BgWlijSL.jpg",
+      "assets/amman_1-DpyjwLBy.jpg",
+      "assets/amman_2-BObLp-F3.jpg",
+      "assets/amman_3-CrVZYRPh.jpg"
     ]
   },
   "app/welcome/Jordan.png": {
-    "file": "client/assets/Jordan-y9v5POLf.png",
+    "file": "assets/Jordan-y9v5POLf.png",
     "src": "app/welcome/Jordan.png"
   },
   "app/welcome/amman_1.jpg": {
-    "file": "client/assets/amman_1-DpyjwLBy.jpg",
+    "file": "assets/amman_1-DpyjwLBy.jpg",
     "src": "app/welcome/amman_1.jpg"
   },
   "app/welcome/amman_2.jpg": {
-    "file": "client/assets/amman_2-BObLp-F3.jpg",
+    "file": "assets/amman_2-BObLp-F3.jpg",
     "src": "app/welcome/amman_2.jpg"
   },
   "app/welcome/amman_3.jpg": {
-    "file": "client/assets/amman_3-CrVZYRPh.jpg",
+    "file": "assets/amman_3-CrVZYRPh.jpg",
     "src": "app/welcome/amman_3.jpg"
   },
   "app/welcome/ammar.jpg": {
-    "file": "client/assets/ammar-4qj2tkqV.jpg",
+    "file": "assets/ammar-4qj2tkqV.jpg",
     "src": "app/welcome/ammar.jpg"
   },
   "app/welcome/anna.jpg": {
-    "file": "client/assets/anna-DUiM4K0U.jpg",
+    "file": "assets/anna-DUiM4K0U.jpg",
     "src": "app/welcome/anna.jpg"
   },
   "app/welcome/car1.jpg": {
-    "file": "client/assets/car1-CDRnNx4J.jpg",
+    "file": "assets/car1-CDRnNx4J.jpg",
     "src": "app/welcome/car1.jpg"
   },
   "app/welcome/car2.jpg": {
-    "file": "client/assets/car2-BRlUrQvW.jpg",
+    "file": "assets/car2-BRlUrQvW.jpg",
     "src": "app/welcome/car2.jpg"
   },
   "app/welcome/car3.jpg": {
-    "file": "client/assets/car3-DPYWqZEe.jpg",
+    "file": "assets/car3-DPYWqZEe.jpg",
     "src": "app/welcome/car3.jpg"
   },
   "app/welcome/cytadela_1.jpg": {
-    "file": "client/assets/cytadela_1-CHV2FL6P.jpg",
+    "file": "assets/cytadela_1-CHV2FL6P.jpg",
     "src": "app/welcome/cytadela_1.jpg"
   },
   "app/welcome/cytadela_2.jpg": {
-    "file": "client/assets/cytadela_2-BqCqjnJ4.jpg",
+    "file": "assets/cytadela_2-BqCqjnJ4.jpg",
     "src": "app/welcome/cytadela_2.jpg"
   },
   "app/welcome/cytadela_3.jpg": {
-    "file": "client/assets/cytadela_3-BQ3adZjc.jpg",
+    "file": "assets/cytadela_3-BQ3adZjc.jpg",
     "src": "app/welcome/cytadela_3.jpg"
   },
   "app/welcome/hero2.png": {
-    "file": "client/assets/hero2-DpXUIwrN.png",
+    "file": "assets/hero2-DpXUIwrN.png",
     "src": "app/welcome/hero2.png"
   },
   "app/welcome/hero3.jpg": {
-    "file": "client/assets/hero3-l2Zet2I6.jpg",
+    "file": "assets/hero3-l2Zet2I6.jpg",
     "src": "app/welcome/hero3.jpg"
   },
   "app/welcome/herojordan.jpg": {
-    "file": "client/assets/herojordan-DSK0e3nv.jpg",
+    "file": "assets/herojordan-DSK0e3nv.jpg",
     "src": "app/welcome/herojordan.jpg"
   },
   "app/welcome/offer1.jpg": {
-    "file": "client/assets/offer1-BNoviMAA.jpg",
+    "file": "assets/offer1-BNoviMAA.jpg",
     "src": "app/welcome/offer1.jpg"
   },
   "app/welcome/petra_1.jpg": {
-    "file": "client/assets/petra_1-ClXVPgmf.jpg",
+    "file": "assets/petra_1-ClXVPgmf.jpg",
     "src": "app/welcome/petra_1.jpg"
   },
   "app/welcome/petra_2.jpg": {
-    "file": "client/assets/petra_2-bEkig5XZ.jpg",
+    "file": "assets/petra_2-bEkig5XZ.jpg",
     "src": "app/welcome/petra_2.jpg"
   },
   "app/welcome/petra_3.jpg": {
-    "file": "client/assets/petra_3-BgWlijSL.jpg",
+    "file": "assets/petra_3-BgWlijSL.jpg",
     "src": "app/welcome/petra_3.jpg"
   },
   "app/welcome/teatr_1.jpg": {
-    "file": "client/assets/teatr_1-DE4HhRai.jpg",
+    "file": "assets/teatr_1-DE4HhRai.jpg",
     "src": "app/welcome/teatr_1.jpg"
   },
   "app/welcome/teatr_2.jpg": {
-    "file": "client/assets/teatr_2-DG10vXh_.jpg",
+    "file": "assets/teatr_2-DG10vXh_.jpg",
     "src": "app/welcome/teatr_2.jpg"
   },
   "app/welcome/teatr_3.jpg": {
-    "file": "client/assets/teatr_3-ntbva06C.jpg",
+    "file": "assets/teatr_3-ntbva06C.jpg",
     "src": "app/welcome/teatr_3.jpg"
   },
   "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx": {
