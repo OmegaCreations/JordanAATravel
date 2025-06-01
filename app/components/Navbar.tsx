@@ -15,14 +15,14 @@ const Navbar = () => {
           to="/"
           className="text-xl md:text-2xl font-bold text-white"
           onClick={closeMenu}
-          style={{ color: "#f7f7f7" }}
+          style={{ color: "#f7f7f7 !important" }}
         >
           Jordan AA Trips
         </Link>
 
         {/* Hamburger Menu Button (mobile only) */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden !text-white focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -88,12 +88,11 @@ const NavItem = ({
     className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-center ${
         isActive
-          ? "text-[#f2a65a] font-semibold"
-          : "text-white hover:bg-[#5a6150]"
+          ? "!text-[#f2a65a] font-semibold"
+          : "!text-white hover:bg-[#5a6150]"
       }`
     }
     onClick={onClick}
-    style={{ color: "#f7f7f7" }}
   >
     {label}
   </NavLink>
