@@ -11,7 +11,7 @@ body {
   @apply bg-white dark:bg-[#fff];
 
   @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 

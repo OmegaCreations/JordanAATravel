@@ -15,6 +15,7 @@ const Navbar = () => {
           to="/"
           className="text-xl md:text-2xl font-bold text-white"
           onClick={closeMenu}
+          style={{ color: "#f7f7f7" }}
         >
           Jordan AA Trips
         </Link>
@@ -92,6 +93,7 @@ const NavItem = ({
       }`
     }
     onClick={onClick}
+    style={{ color: "#f7f7f7" }}
   >
     {label}
   </NavLink>

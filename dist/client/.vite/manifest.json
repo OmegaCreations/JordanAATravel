@@ -11,7 +11,7 @@
     ]
   },
   "app/root.tsx?__react-router-build-client-route": {
-    "file": "assets/root-CBikfQSf.js",
+    "file": "assets/root-Bdl9hL3g.js",
     "name": "root",
     "src": "app/root.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -20,7 +20,7 @@
       "_chunk-D4RADZKF-CBsssaMY.js"
     ],
     "css": [
-      "assets/root-DBj73SBY.css"
+      "assets/root-BGkKwh8j.css"
     ]
   },
   "app/routes/home.tsx?__react-router-build-client-route": {
