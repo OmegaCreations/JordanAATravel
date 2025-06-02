@@ -17,7 +17,7 @@ const TripadvisorIcon = () => (
 
 const FacebookIcon = () => (
   <div className=" !text-white hover:bg-[#5a6150] transition-colors px-3 py-2 rounded-md text-center flex w-full flex-row gap-2 justify-center items-center self-center">
-    <img src={facebookIcon} className="h-10 w-10" />
+    <img src={facebookIcon} className="h-8 w-8" />
     <span
       className="text-xl text-white"
       style={{ color: "#f7f7f7 !important" }}
