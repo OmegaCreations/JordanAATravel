@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
 import tripAdvisorIcon from "../welcome/tripadvisor.png";
+import facebookIcon from "../welcome/facebook.png";
 
 const TripadvisorIcon = () => (
   <div className=" !text-white hover:bg-[#5a6150] transition-colors px-3 py-2 rounded-md text-center flex w-full flex-row gap-2 justify-center items-center self-center">
@@ -11,6 +12,16 @@ const TripadvisorIcon = () => (
     >
       TripAdvisor
     </span>
+  </div>
+);
+
+const FacebookIcon = () => (
+  <div className=" !text-white hover:bg-[#5a6150] transition-colors px-3 py-2 rounded-md text-center flex w-full flex-row gap-2 justify-center items-center self-center">
+    <img src={facebookIcon} className="h-10 w-10" />
+    <span
+      className="text-xl text-white"
+      style={{ color: "#f7f7f7 !important" }}
+    ></span>
   </div>
 );
 
@@ -79,6 +90,17 @@ const Navbar = () => {
           >
             <TripadvisorIcon />
           </a>
+
+          {/* Facebook group */}
+          <a
+            href="https://www.facebook.com/groups/718044214509374/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#f2a65a] transition-colors"
+            title="Read reviews on Tripadvisor"
+          >
+            <FacebookIcon />
+          </a>
         </div>
       </div>
 
@@ -89,14 +111,27 @@ const Navbar = () => {
             <NavItem to="/" label="Home" onClick={closeMenu} />
             <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
             <NavItem to="/places" label="Places" onClick={closeMenu} />
-            <TripadvisorIcon />
+
             {/* Tripadvisor Icon - Mobile */}
             <a
               href="https://www.tripadvisor.co.uk/Attraction_Review-g293986-d29452369-Reviews-Ammar_Best_Trips-Amman_Amman_Governorate.html"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#f2a65a] flex items-center space-x-2"
-            ></a>
+            >
+              <TripadvisorIcon />
+            </a>
+
+            {/* Facebook group */}
+            <a
+              href="https://www.facebook.com/groups/718044214509374/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#f2a65a] transition-colors"
+              title="Read reviews on Tripadvisor"
+            >
+              <FacebookIcon />
+            </a>
           </div>
         </div>
       )}
