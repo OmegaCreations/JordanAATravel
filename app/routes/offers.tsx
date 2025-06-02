@@ -18,7 +18,7 @@ const offersData: Offer[] = [
     title: "I Classic Trip",
     subtitle:
       "We invite you to travel to the heart of the Middle East - Jordan!",
-    description: `Over 8 days, you will discover the unique history, culture and landscapes of this fascinating country.
+    description: `Over 7 days, you will discover the unique history, culture and landscapes of this fascinating country.
 From the bustling Amman, through the ancient ruins of Jerash, the mosaics of Madaba and Mount Nebo, to the mighty castle in Karak. You will visit the mysterious Petra 🕍 - one of the new seven wonders of the world, and the Wadi Rum desert will delight you with its red sands and picturesque rock formations. You will also relax by the salty Dead Sea⛱️ - a place you have to see with your own eyes.
 This is a journey full of history, extraordinary places and unforgettable memories.`,
     places: [
@@ -36,20 +36,19 @@ This is a journey full of history, extraordinary places and unforgettable memori
   {
     id: 2,
     title: "II Classic Trip",
-    subtitle:
-      "Are you looking for an adventure that will transport you back in time, let you explore the wonders of nature, and feel the magic of the desert?",
+    subtitle: "",
     description: `We have a ready-made 7-day travel plan in Jordan, filled with incredible places:`,
     places: [
-      "Amman - A modern capital with soul - The Citadel, Roman Theatre, and the charming Rainbow Street are the perfect start to your adventure.",
-      "Jerash - One of the best-preserved Roman cities in the world - colonnades, amphitheaters, and ancient streets right in the middle of the desert.",
-      "Madaba - Famous for its mosaics – especially the legendary Map of the Holy Land in St. George’s Church.",
-      "Mount Nebo - The place where Moses saw the Promised Land. The view over the Jordan Valley and the Dead Sea is breathtaking.",
-      "Baptism Site (Al-Maghtas) - The sacred place where Jesus was baptized in the Jordan River – a unique experience for visitors of all faiths.",
-      "Al-Karak - An impressive Crusader castle full of history and incredible views over the valley.",
-      "Dana - A nature reserve with stunning canyons, hiking trails, and tranquility like nowhere else.",
-      "Petra - A Wonder of the World – the Nabatean city carved into the rocks. The Treasury, the Monastery, the Siq canyon – every step is a journey back in time.",
-      "Wadi Rum - A desert that feels like Mars – red sand, canyons, rock formations. Jeep safari and a night under the stars in a Bedouin camp.",
-      "Dead Sea - The lowest point on Earth – floating in the water and mud baths are an unforgettable experience.",
+      "Amman",
+      "Jerash",
+      "Madaba",
+      "Mount Nebo",
+      "Baptism Site (Al-Maghtas)",
+      "Al-Karak",
+      "Dana",
+      "Petra",
+      "Wadi Rum",
+      "Dead Sea",
     ],
     imageUrl: imgUrl,
   },

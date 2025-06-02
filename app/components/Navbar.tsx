@@ -1,6 +1,18 @@
-// app/components/Navbar.tsx
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
+import tripAdvisorIcon from "../welcome/tripadvisor.png";
+
+const TripadvisorIcon = () => (
+  <div className=" !text-white hover:bg-[#5a6150] transition-colors px-3 py-2 rounded-md text-center flex w-full flex-row gap-2 justify-center items-center self-center">
+    <img src={tripAdvisorIcon} className="h-5 w-5" />
+    <span
+      className="text-xl text-white"
+      style={{ color: "#f7f7f7 !important" }}
+    >
+      TripAdvisor
+    </span>
+  </div>
+);
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,20 +64,39 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Menu (hidden on mobile) */}
-        <div className="hidden md:flex space-x-4 md:space-x-6">
+        <div className="hidden md:flex items-center space-x-4 md:space-x-6">
           <NavItem to="/" label="Home" onClick={closeMenu} />
           <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
           <NavItem to="/places" label="Places" onClick={closeMenu} />
+
+          {/* Tripadvisor Icon */}
+          <a
+            href="https://www.tripadvisor.co.uk/Attraction_Review-g293986-d29452369-Reviews-Ammar_Best_Trips-Amman_Amman_Governorate.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#f2a65a] transition-colors"
+            title="Read reviews on Tripadvisor"
+          >
+            <TripadvisorIcon />
+          </a>
         </div>
       </div>
 
-      {/* Mobile Menu (shown when toggled) */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-[#3f4238] py-4 px-4">
           <div className="flex flex-col space-y-4">
             <NavItem to="/" label="Home" onClick={closeMenu} />
             <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
             <NavItem to="/places" label="Places" onClick={closeMenu} />
+            <TripadvisorIcon />
+            {/* Tripadvisor Icon - Mobile */}
+            <a
+              href="https://www.tripadvisor.co.uk/Attraction_Review-g293986-d29452369-Reviews-Ammar_Best_Trips-Amman_Amman_Governorate.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#f2a65a] flex items-center space-x-2"
+            ></a>
           </div>
         </div>
       )}
@@ -73,7 +104,6 @@ const Navbar = () => {
   );
 };
 
-// Helper component for navigation items
 const NavItem = ({
   to,
   label,
@@ -89,7 +119,7 @@ const NavItem = ({
       `block px-3 py-2 rounded-md text-center ${
         isActive
           ? "!text-[#f2a65a] font-semibold"
-          : "!text-white hover:bg-[#5a6150]"
+          : "!text-white hover:bg-[#5a6150] transition-colors"
       }`
     }
     onClick={onClick}
