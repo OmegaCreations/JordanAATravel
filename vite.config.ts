@@ -5,9 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: "/JordanAATravel/client/", // Musi być zgodne z basename
   build: {
-    outDir: "dist/",
+    outDir: "dist",
     emptyOutDir: true,
     manifest: true,
     rollupOptions: {

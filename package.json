@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
+    "postbuild": "mv ./dist/client/* ./dist && rm -r ./dist/client",
     "dev": "react-router dev",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -b gh-pages"
