@@ -97,7 +97,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[var(--primary_shade)] py-4 px-4">
+        <div className="md:hidden bg-[var(--primary_nav)] py-4 px-4">
           <div className="flex flex-col space-y-4">
             <NavItem to="/" label="Home" onClick={closeMenu} />
             <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
@@ -108,7 +108,7 @@ const Navbar = () => {
               href="https://www.tripadvisor.co.uk/Attraction_Review-g293986-d29452369-Reviews-Ammar_Best_Trips-Amman_Amman_Governorate.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--primary)] hover:text-[var(--primary_shade2)] flex items-center space-x-2"
+              className="text-[var(--secondary_nav)] hover:text-[var(--third_nav)] flex items-center space-x-2"
             >
               <TripadvisorIcon />
             </a>
@@ -118,7 +118,7 @@ const Navbar = () => {
               href="https://www.facebook.com/groups/718044214509374/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--secondary)] hover:text-[var(--primary_shade2)] transition-colors"
+              className="hover:text-[var(--third_nav)] transition-colors"
               title="Read reviews on Tripadvisor"
             >
               <FacebookIcon />
