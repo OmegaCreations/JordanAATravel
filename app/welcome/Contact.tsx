@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full px-6 py-20 bg-[#3f4238] text-white text-center"
+      className="w-full px-6 py-20 bg-[var(--primary_shade)] text-white text-center"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#f7f7f7]">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 headerText">
         Get in Touch
       </h2>
 
@@ -19,7 +19,7 @@ const Contact = () => {
           href="https://wa.me/+00962776403515"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-medium text-lg px-6 py-3 rounded-full transition duration-300 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center gap-3 bg-[var(--primary)] hover:bg-[var(--primary_shade)] border-1 border-[var(--primary)] hover:border-[var(--secondary)] text-white font-medium text-lg px-6 py-3 rounded-full transition duration-300 shadow-lg hover:shadow-xl"
         >
           <MessageCircle className="w-6 h-6" />
           WhatsApp - Ammar
@@ -27,7 +27,7 @@ const Contact = () => {
 
         <a
           href="mailto:lana.tours2017@gmail.com"
-          className="text-lg font-medium text-blue-300 underline hover:text-blue-200 transition duration-300"
+          className="text-lg font-medium underline transition duration-300"
         >
           lana.tours2017@gmail.com
         </a>
@@ -37,7 +37,7 @@ const Contact = () => {
           href="https://wa.me/+48792052004"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-medium text-lg px-6 py-3 rounded-full transition duration-300 shadow-lg hover:shadow-xl"
+          className="inline-flex items-center gap-3 bg-[var(--primary)] hover:bg-[var(--primary_shade)] border-1 border-[var(--primary)] hover:border-[var(--secondary)] text-white font-medium text-lg px-6 py-3 rounded-full transition duration-300 shadow-lg hover:shadow-xl"
         >
           <MessageCircle className="w-6 h-6" />
           WhatsApp - Anna

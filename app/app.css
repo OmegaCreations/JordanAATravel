@@ -33,9 +33,21 @@ body {
   --marker-size: 8px;
   --track-height: 1px;
 
-  --primary: #3f4238;
-  --orange1: #eec170;
-  --orange2: #f2a65a;
+  --primary: #bf9b79;
+  --primary_shade: #2e3532;
+  --primary_shade2: #1f2422;
+
+  --secondary: #f7f7f7;
+
+  --orange1: #d9c4a9;
+  --orange2: #734a34;
+  --red: #ce1126;
+
+  --primary_nav: #d9c4a9;
+  --secondary_nav: #734a34;
+  --third_nav: #1f2422;
+  --fourth_nav: #d9c4a9;
+  --active_nav: #a67459;
 }
 
 h3 {
@@ -328,4 +340,21 @@ a {
   color: var(--color--foreground--100);
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+/* ADDITIONAL STYLING */
+.headerText {
+  color: var(--orange2);
+
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navItem:hover {
+  background-color: var(--third_nav);
+  color: var(--fourth_nav);
+}
+
+.navItem {
+  color: var(--secondary_nav);
 }

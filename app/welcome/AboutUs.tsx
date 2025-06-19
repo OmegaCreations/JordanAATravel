@@ -7,7 +7,7 @@ const AboutUs = () => {
       id="aboutUs"
       className="mainSection py-24 mx-auto px-4 text-center bg-[#fff]"
     >
-      <h3 className="text-3xl font-bold text-gray-800">About Us</h3>
+      <h3 className="text-3xl font-bold headerText">About Us</h3>
       <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
         Meet the team behind Jordan AA Trips — passionate travelers,
         professionals, and local experts.
@@ -20,7 +20,7 @@ const AboutUs = () => {
             <img
               src={ammarImg}
               alt="Ammar Daoud"
-              className="w-24 h-24 rounded-full object-cover border-2 border-[#eec170]"
+              className="w-24 h-24 rounded-full object-cover border-2 border-[var(--orange1)]"
             />
             <div>
               <h4 className="text-xl font-semibold text-gray-800">
@@ -47,7 +47,7 @@ const AboutUs = () => {
             <img
               src={annaImg}
               alt="Anna Sala"
-              className="w-24 h-24 rounded-full object-cover border-2 border-[#eec170]"
+              className="w-24 h-24 rounded-full object-cover border-2 border-[var(--orange1)]"
             />
             <div>
               <h4 className="text-xl font-semibold text-gray-800">Anna Sala</h4>

@@ -14,15 +14,15 @@ const Benefits = () => {
           marginBottom: "40px",
         }}
       />
-      <h3 className="text-3xl font-bold text-gray-800">What Do We Offer</h3>
+      <h3 className="text-3xl font-bold headerText">What Do We Offer</h3>
       <p className="text-gray-500 mt-2 max-w-xl mx-auto">
         Tailored travel experiences for your journey through Jordan.
       </p>
 
       <div className="mt-12 max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-lg">
-          <div className="flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-green-100 mb-4 group-hover:scale-105 transition">
-            <MapPin className="text-green-600 w-7 h-7" />
+          <div className="flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-[var(--primary_shade2)] mb-4 group-hover:scale-105 transition">
+            <MapPin className="text-[var(--orange1)] w-7 h-7" />
           </div>
           <h4 className="text-xl font-semibold text-gray-800">
             Full Experience
@@ -33,8 +33,8 @@ const Benefits = () => {
         </div>
 
         <div className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-lg">
-          <div className="flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-green-100 mb-4 group-hover:scale-105 transition">
-            <BusFront className="text-green-600 w-7 h-7" />
+          <div className="flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-[var(--primary_shade2)] mb-4 group-hover:scale-105 transition">
+            <BusFront className="text-[var(--orange1)] w-7 h-7" />
           </div>
           <h4 className="text-xl font-semibold text-gray-800">Modern Fleet</h4>
           <p className="mt-2 text-gray-600">
@@ -43,8 +43,8 @@ const Benefits = () => {
         </div>
 
         <div className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-lg">
-          <div className="flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-green-100 mb-4 group-hover:scale-105 transition">
-            <Wifi className="text-green-600 w-7 h-7" />
+          <div className="flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-[var(--primary_shade2)] mb-4 group-hover:scale-105 transition">
+            <Wifi className="text-[var(--orange1)] w-7 h-7" />
           </div>
           <h4 className="text-xl font-semibold text-gray-800">Free Wi-Fi</h4>
           <p className="mt-2 text-gray-600">

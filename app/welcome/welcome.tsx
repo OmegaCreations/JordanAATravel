@@ -17,8 +17,7 @@ export function Welcome() {
       >
         <img className="bgImg" src={jordanBorderImg} />
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-700">
-          <span style={{ color: "#F2A65A" }}>Jordan</span> - your paradise on
-          earth
+          <span className="headerText">Jordan</span> - your paradise on earth
         </h2>
         <p className="mt-4 text-gray-600">
           From the ancient city of Petra to the serene waters of the Dead Sea,

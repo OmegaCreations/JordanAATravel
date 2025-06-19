@@ -1,84 +1,11 @@
-// app/routes/Offers.tsx
-import React from "react";
-import imgUrl from "../welcome/offer1.jpg";
+import { Link } from "react-router";
+import { offersData } from "../utils/offers";
 import heroImg2 from "../welcome/hero2.png";
-
-interface Offer {
-  id: number;
-  title: string;
-  subtitle: string;
-  description: string;
-  places: string[];
-  imageUrl: string;
-}
-
-const offersData: Offer[] = [
-  {
-    id: 1,
-    title: "I Classic Trip",
-    subtitle:
-      "We invite you to travel to the heart of the Middle East - Jordan!",
-    description: `Over 7 days, you will discover the unique history, culture and landscapes of this fascinating country.
-From the bustling Amman, through the ancient ruins of Jerash, the mosaics of Madaba and Mount Nebo, to the mighty castle in Karak. You will visit the mysterious Petra 🕍 - one of the new seven wonders of the world, and the Wadi Rum desert will delight you with its red sands and picturesque rock formations. You will also relax by the salty Dead Sea⛱️ - a place you have to see with your own eyes.
-This is a journey full of history, extraordinary places and unforgettable memories.`,
-    places: [
-      "Amman",
-      "Jerash",
-      "Madaba",
-      "Mount Nebo",
-      "Karak",
-      "Petra",
-      "Wadi Rum",
-      "Dead Sea",
-    ],
-    imageUrl: imgUrl,
-  },
-  {
-    id: 2,
-    title: "II Classic Trip",
-    subtitle: "",
-    description: `We have a ready-made 7-day travel plan in Jordan, filled with incredible places:`,
-    places: [
-      "Amman",
-      "Jerash",
-      "Madaba",
-      "Mount Nebo",
-      "Baptism Site (Al-Maghtas)",
-      "Al-Karak",
-      "Dana",
-      "Petra",
-      "Wadi Rum",
-      "Dead Sea",
-    ],
-    imageUrl: imgUrl,
-  },
-  {
-    id: 3,
-    title: "III Historical Places Trip",
-    subtitle: "Route - Historical Sites of Jordan",
-    description: `We have prepared a unique route for you, which will allow you to discover the most important historical and cultural treasures of Jordan. Perfect for lovers of history, archeology and amazing views!`,
-    places: [
-      "Amman - the capital with a Roman theatre and Citadel",
-      "Quasr al-Mushatta - ruins of the early Islamic Umayyad Palace",
-      "Madaba - famous for its mosaics, especially the Map of the Holy Land",
-      "Iraq al-Amir - Hasmonean palace and caves",
-      "Ajloun - Ajloun Castle, a medieval defensive fortress",
-      "Jerash - one of the best-preserved Roman cities",
-      "Mount Nebo - the place where Moses saw the Promised Land",
-      "Umm ar-Rasas - an archaeological site with Byzantine and Roman ruins",
-      "Karak - a mighty Crusader castle overlooking the valley",
-      "Shoubak - a Crusader castle, less known but full of secrets",
-      "Petra - a wonder of the world, a Nabataean city carved into the rock",
-      "Wadi Rum - desert landscapes, Martian views and Bedouin stories",
-    ],
-    imageUrl: imgUrl,
-  },
-];
 
 export default function Offers() {
   return (
     <main className="bg-white">
-      {/* Sekcja hero */}
+      {/* Hero sekcja */}
       <div className="relative h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
@@ -86,71 +13,43 @@ export default function Offers() {
             alt="Jordan landscape"
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
         </div>
-
         <div className="relative z-10 px-4 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Offer
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-600 font-light">
-            Check what we have prepared for your adventure! We are tailoring all
-            of the sample routes below to your needs and preferences.
+            Choose your dream journey across Jordan!
           </h2>
         </div>
       </div>
 
-      {/* Sekcja ofert */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      {/* Lista ofert */}
+      <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {offersData.map((offer) => (
-          <div
+          <Link
             key={offer.id}
-            className="mb-24 last:mb-0 flex flex-col lg:flex-row items-center gap-12"
+            to={`/offers/${offer.id}`}
+            className="block rounded-lg overflow-hidden shadow hover:shadow-xl transition"
           >
-            {/* Tekst */}
-            <div className="lg:w-1/2 w-full space-y-6">
-              <div className="border-l-4 border-indigo-500 pl-4">
-                <h2 className="text-3xl font-bold text-gray-900">
-                  {offer.title}
-                </h2>
-                <h3 className="text-xl text-indigo-600 mt-1">
-                  {offer.subtitle}
-                </h3>
-              </div>
-
-              <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-                {offer.description}
+            <div className="aspect-[4/3]">
+              <img
+                src={offer.imageUrl}
+                alt={offer.title}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="text-xl font-bold text-gray-900">{offer.title}</h3>
+              <p className="text-sm text-[var(--primary)] mb-2">
+                {offer.subtitle}
               </p>
-
-              <div>
-                <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                  Places to visit
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {offer.places.map((place, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-start py-2 border-b border-gray-100"
-                    >
-                      <span className="inline-block w-2 h-2 bg-indigo-400 rounded-full mt-2 mr-3"></span>
-                      <span className="text-gray-600">{place}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <p className="text-sm text-gray-600">
+                {offer.description.slice(0, 150).trim()}...
+              </p>
             </div>
-
-            {/* Obrazek */}
-            <div className="lg:w-1/2 w-full">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg">
-                <img
-                  src={offer.imageUrl}
-                  alt={offer.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </main>

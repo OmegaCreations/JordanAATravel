@@ -40,7 +40,7 @@ const Advantages = () => {
       id="advantages"
       className="mainSection py-20 px-6 bg-gradient-to-b from-[#fff] to-[#f7f7f7]"
     >
-      <h2 className="text-4xl font-bold text-center text-[#f2a65a] mb-20">
+      <h2 className="text-4xl font-bold text-center headerText mb-20">
         Why Choose Jordan AA Trips?
       </h2>
       <div className="space-y-24 max-w-6xl mx-auto">
