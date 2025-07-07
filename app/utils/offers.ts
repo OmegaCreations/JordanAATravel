@@ -28,12 +28,12 @@ export const offersData: Offer[] = [
 🔹 Mount Nebo - a viewpoint with a panoramic view of the Jordan Valley and the Dead Sea
 🔹 Jerash - the best-preserved Roman city in the Middle East
 🔹 Ajloun Castle - Saladin's fortress from the 12th century, with a view of the valleys and hills
-🔹 Drive along the legendary Royal Road and the Wadi Mujib canyon
+🔹 !#Drive along the legendary Royal Road and the Wadi Mujib canyon
 🔹 Karak Castle - an impressive Crusader fortress with extensive corridors and viewpoints
 🔹 Petra - one of the New Seven Wonders of the World, carved into rose-red cliffs
 🔹 !#Little Petra - a lesser-known, intimate vestibule of Petra, a former caravan station
 🔹 Wadi Rum - a jeep tour of the "Valley of the Moon", red dunes, canyons and rock arches
-🔹 Traditional Bedouin dinner and a night in a camp under  starry sky
+🔹 !#Traditional Bedouin dinner and a night in a camp under  starry sky
 🔹 Aqaba - free time on the beach, snorkeling, boat trip or walk along the seaside boulevard
 🔹 Dead Sea - bathing at the lowest point on Earth, mud spa and sunset`.split(
       "🔹"
@@ -56,7 +56,7 @@ export const offersData: Offer[] = [
 🔹 Madaba - the famous mosaic map of the Holy Land
 🔹 Mount Nebo - Moses' viewpoint
 🔹 Baptismal Site (Al-Maghtas) - on the Jordan River
-🔹 The Royal Road - the beginning of the journey along the legendary route: a scenic drive through Wadi Mujib
+🔹 !#The Royal Road - the beginning of the journey along the legendary route: a scenic drive through Wadi Mujib
 🔹 Karak Castle - an impressive Crusader fortress
 🔹 Shobak Castle - a picturesque fortress  King Baldwin I
 🔹 Khirbet al-Dharieh - rarely visited archaeological site with Nabataean remains, with views of the desert and the Arabah Valley
