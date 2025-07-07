@@ -24,7 +24,7 @@ const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[var(--primary_nav)] shadow-md z-50">
+    <nav className="navbar fixed top-0 left-0 w-full shadow-md z-50">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link
           to="/"
