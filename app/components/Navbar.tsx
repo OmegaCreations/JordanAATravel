@@ -84,11 +84,11 @@ const Navbar = () => {
 
           {/* Facebook group */}
           <a
-            href="https://www.facebook.com/groups/718044214509374/"
+            href="https://www.facebook.com/profile.php?id=61577349625705"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--third_nav)] transition-colors"
-            title="Read reviews on Tripadvisor"
+            title="Visit facebook fanpage"
           >
             <FacebookIcon />
           </a>
@@ -97,7 +97,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[var(--primary_nav)] py-4 px-4">
+        <div className="md:hidden py-4 px-4">
           <div className="flex flex-col space-y-4">
             <NavItem to="/" label="Home" onClick={closeMenu} />
             <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
@@ -115,11 +115,11 @@ const Navbar = () => {
 
             {/* Facebook group */}
             <a
-              href="https://www.facebook.com/groups/718044214509374/"
+              href="https://www.facebook.com/profile.php?id=61577349625705"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[var(--third_nav)] transition-colors"
-              title="Read reviews on Tripadvisor"
+              title="Visit our fanpage on Facebook"
             >
               <FacebookIcon />
             </a>

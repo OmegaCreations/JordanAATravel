@@ -31,7 +31,7 @@ const e="/assets/offer_historical-D244kGNQ.jpg",a="/assets/offer_classic-_T7u8XJ
 🔹 Shobak Castle - a picturesque fortress  King Baldwin I
 🔹 Khirbet al-Dharieh - rarely visited archaeological site with Nabataean remains, with views of the desert and the Arabah Valley
 🔹 Petra - Nabataean rock city: Treasury, Street of Facades, Ad-Deir Monastery and much more
-🔹 Wadi Rum - jeep tour of the moon valley, sunset and night in a Bedouin camp under the starry sky`.split("🔹"),imageUrl:e},{id:3,title:"Wellness Trip",subtitle:"",description:"",places:`Amman - 
+🔹 Wadi Rum - jeep tour of the moon valley, sunset and night in a Bedouin camp under the starry sky`.split("🔹"),imageUrl:e},{id:3,title:"Wellness Trip",subtitle:"",description:"Discover the vibrant capital of Jordan: the Citadel with a panoramic view, the impressive Roman Theater and the atmospheric Rainbow Street with cafes, galleries and local shops. A great place to start and first tastes of Jordanian cuisine.",places:`Amman - 
 Discover the vibrant capital of Jordan: the Citadel with a panoramic view, the impressive Roman Theater and the atmospheric Rainbow Street with cafes, galleries and local shops. A great place to start and first tastes of Jordanian cuisine.
 
 🔹 Petra -

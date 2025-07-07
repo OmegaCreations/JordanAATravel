@@ -1,19 +1,19 @@
-import hero from "../welcome/hero3.jpg";
-import { Link, Outlet } from "react-router";
+import hero from "../welcome/hero3.jpeg";
+import { Link } from "react-router";
 import { placesData } from "../utils/places";
 
 export default function Places() {
   return (
     <main className="bg-white">
       {/* Hero sekcja */}
-      <div className="relative h-[50vh] flex flex-col justify-center items-center text-center overflow-hidden">
+      <div className="hero-places relative flex flex-col overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src={hero}
             alt="Jordan landscapes"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70"></div>
+          <div className="absolute inset-0"></div>
         </div>
         <div className="relative z-10 px-4 max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -45,7 +45,8 @@ export default function Places() {
                 {place.name}
               </h3>
               <p className="text-gray-600 text-sm leading-snug">
-                {place.description.slice(0, 180).trim()}...
+                {place.description.slice(0, 180).replace(/<img>/g, "").trim()}
+                ...
               </p>
             </div>
           </Link>

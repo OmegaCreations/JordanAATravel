@@ -1,25 +1,25 @@
 import { Link } from "react-router";
 import { offersData } from "../utils/offers";
-import heroImg2 from "../welcome/hero2.png";
+import heroImg2 from "../welcome/desert1.jpeg";
 
 export default function Offers() {
   return (
     <main className="bg-white">
       {/* Hero sekcja */}
-      <div className="relative h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden">
+      <div className="hero-places relative flex flex-col overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg2}
-            alt="Jordan landscape"
-            className="w-full h-full object-cover opacity-20"
+            alt="Jordan landscapes"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
+          <div className="absolute inset-0"></div>
         </div>
-        <div className="relative z-10 px-4 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="relative z-10 px-4 max-w-4xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our Offer
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 font-light">
+          <h2 className="text-xl md:text-2xl text-white/90 font-light">
             Choose your dream journey across Jordan!
           </h2>
         </div>
@@ -46,7 +46,8 @@ export default function Offers() {
                 {offer.subtitle}
               </p>
               <p className="text-sm text-gray-600">
-                {offer.description.slice(0, 150).trim()}...
+                {offer.description.slice(0, 150).replace(/<img>/g, "").trim()}
+                ...
               </p>
             </div>
           </Link>

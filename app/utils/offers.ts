@@ -70,7 +70,8 @@ export const offersData: Offer[] = [
     id: 3,
     title: "Wellness Trip",
     subtitle: "",
-    description: "",
+    description:
+      "Discover the vibrant capital of Jordan: the Citadel with a panoramic view, the impressive Roman Theater and the atmospheric Rainbow Street with cafes, galleries and local shops. A great place to start and first tastes of Jordanian cuisine.",
     places: `Amman - 
 Discover the vibrant capital of Jordan: the Citadel with a panoramic view, the impressive Roman Theater and the atmospheric Rainbow Street with cafes, galleries and local shops. A great place to start and first tastes of Jordanian cuisine.
 

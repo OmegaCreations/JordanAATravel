@@ -1,31 +1,4 @@
-import teatr1 from "../welcome/teatr_1.jpg";
-import teatr2 from "../welcome/teatr_2.jpg";
-import teatr3 from "../welcome/teatr_3.jpg";
-
-import cytadela1 from "../welcome/cytadela_1.jpg";
-import cytadela2 from "../welcome/cytadela_2.jpg";
-import cytadela3 from "../welcome/cytadela_3.jpg";
-
-import petra1 from "../welcome/petra_1.jpg";
-import petra2 from "../welcome/petra_2.jpg";
-import petra3 from "../welcome/petra_3.jpg";
-
-import amman1 from "../welcome/amman_1.jpg";
-import amman2 from "../welcome/amman_2.jpg";
-import amman3 from "../welcome/amman_3.jpg";
-
-export interface Place {
-  id: number;
-  name: string;
-  description: string;
-  images: string[];
-}
-
-export const placesData: Place[] = [
-  {
-    id: 1,
-    name: "Amman Roman Theatre",
-    description: `
+const e="/assets/teatr_1-DE4HhRai.jpg",a="/assets/teatr_2-DG10vXh_.jpg",t="/assets/teatr_3-ntbva06C.jpg",n="/assets/cytadela_1-CHV2FL6P.jpg",i="/assets/cytadela_2-BqCqjnJ4.jpg",s="/assets/cytadela_3-BQ3adZjc.jpg",r="/assets/petra_1-ClXVPgmf.jpg",o="/assets/petra_2-bEkig5XZ.jpg",l="/assets/petra_3-BgWlijSL.jpg",h="/assets/amman_1-DpyjwLBy.jpg",d="/assets/amman_2-BObLp-F3.jpg",c="/assets/amman_3-CrVZYRPh.jpg",m=[{id:1,name:"Amman Roman Theatre",description:`
 1. The Name Philadelphia
 
 <img>
@@ -72,13 +45,7 @@ The Romans had an outstanding understanding of acoustics. In Amman’s theater, 
 
 The side chambers of the theater now house two museums: the Museum of Popular Traditions and the Jordan Folklore Museum. Both offer rich insight into the cultural heritage of the region.
 
-    `,
-    images: [teatr1, teatr2, teatr3],
-  },
-  {
-    id: 2,
-    name: "Amman Citadel",
-    description: `
+    `,images:[e,a,t]},{id:2,name:"Amman Citadel",description:`
 1. The Citadel in Amman – Heart of Jordan's History
 
 <img>
@@ -113,13 +80,7 @@ Walking through the Citadel offers more than a history lesson. With sweeping vie
 <img>
 
 The panorama, especially at sunset, creates a striking contrast between past and present – and invites reflection on Jordan’s deep cultural roots.
-`,
-    images: [cytadela1, cytadela2, cytadela3],
-  },
-  {
-    id: 3,
-    name: "Amman – The Capital of Jordan",
-    description: `
+`,images:[n,i,s]},{id:3,name:"Amman – The Capital of Jordan",description:`
 1. Amman: Where Ancient History Meets Modern Energy
 
 <img>
@@ -157,13 +118,7 @@ Modern Amman is a cultural hub, with attractions like Rainbow Street offering ch
 <img>
 
 Its central location makes it the perfect base for visiting nearby wonders such as Petra, the Dead Sea, and Wadi Rum.
-`,
-    images: [amman3, amman2, amman1],
-  },
-  {
-    id: 4,
-    name: "Petra - the pink city carved in stone",
-    description: `
+`,images:[c,d,h]},{id:4,name:"Petra - the pink city carved in stone",description:`
 <img>
 
 1. Origins and Development
@@ -208,7 +163,4 @@ In 1985, Petra was inscribed as a UNESCO World Heritage Site, and in 2007, it wa
 
 In 2024, Petra attracted over 1.1 million tourists. The archaeological site covers approximately 264 km² and includes more than 600 carved facades, tombs, temples, and other monuments.
 
-In 2024, archaeologists made a groundbreaking discovery—beneath the famous Treasury, they found a secret 2,000-year-old tomb containing the remains of 12 individuals.`,
-    images: [petra3, petra2, petra1],
-  },
-];
+In 2024, archaeologists made a groundbreaking discovery—beneath the famous Treasury, they found a secret 2,000-year-old tomb containing the remains of 12 individuals.`,images:[l,o,r]}];export{m as p};

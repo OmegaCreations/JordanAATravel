@@ -55,7 +55,7 @@ export default function PlaceDetail() {
               return (
                 <h2
                   key={`h-${idx}`}
-                  className="font-semibold mt-9 mb-8 ml-8 text-3xl"
+                  className="font-semibold mt-12 mb-8 ml-8 text-3xl"
                 >
                   {block}
                 </h2>

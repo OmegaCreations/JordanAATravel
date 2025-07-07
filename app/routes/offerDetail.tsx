@@ -188,8 +188,8 @@ export default function OfferDetail() {
               const [title, ...rest] = cleaned.split("-");
               return (
                 <li key={idx} className="flex items-start gap-3">
-                  <span className="block mt-1 w-3 h-3 bg-[var(--primary)] rounded-full" />
-                  <div>
+                  <span className="block mt-1 w-3 h-3 bg-[var(--primary)] z-10 absolute rounded-full" />
+                  <div className="ml-6">
                     <p className="font-medium text-gray-900">{title.trim()}</p>
                     {rest.length > 0 && (
                       <p className="text-gray-600 text-sm">
