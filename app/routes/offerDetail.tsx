@@ -157,34 +157,31 @@ export default function OfferDetail() {
 
   return (
     <main className="bg-white">
-      <div className="relative h-[50vh] flex flex-col justify-center items-center overflow-hidden">
+      {/* Hero sekcja */}
+      <div className="h-[50vh] mt-30 flex flex-col justify-center items-center text-center overflow-hidden">
         <img
           src={offer.imageUrl}
           alt={offer.title}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="inset-0 w-auto h-full object-cover z-0"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
-        <div className="relative z-10 px-4 max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {offer.title}
-          </h1>
-          <h2 className="text-xl text-white/90">{offer.subtitle}</h2>
-        </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-6 py-16">
-        <Link
-          to="/offers"
-          className="text-blue-600 hover:underline text-sm mb-6 inline-block"
-        >
+        <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          {offer.title}
+        </h1>
+        <h1 className="text-1xl md:text-2xl text-black/90 mb-8">
+          {offer.subtitle}
+        </h1>
+        <Link to="/offers" className="back-to-btn text-sm mb-6">
           ← Back to offers
         </Link>
         <article className="prose prose-lg prose-gray text-justify">
-          <p>{offer.description}</p>
+          <p className="details-description">{offer.description}</p>
           <h3 className="mt-10 text-xl font-bold">Places to visit</h3>
           <ul className="space-y-4 mt-4">
             {offer.places.map((place, idx) => {
-              const cleaned = place.trim().replace(/^!#/, ""); // usuwa !# tylko z początku
+              const cleaned = place.trim().replace(/^!#/, "");
               const [title, ...rest] = cleaned.split("-");
               return (
                 <li key={idx} className="flex items-start gap-3">
@@ -204,11 +201,7 @@ export default function OfferDetail() {
         </article>
       </div>
 
-      <div className="w-full h-[400px]">
-        <APIProvider apiKey="AIzaSyDM-VwvJzDdncSmuFVyw917oCGuMEAx-pM">
-          <MapWithMarkers offer={offer} />
-        </APIProvider>
-      </div>
+      <div className="w-full h-[400px]">{/* MAP */}</div>
     </main>
   );
 }

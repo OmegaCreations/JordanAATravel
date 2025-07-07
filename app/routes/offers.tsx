@@ -41,7 +41,9 @@ export default function Offers() {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-xl font-bold text-gray-900">{offer.title}</h3>
+              <h3 className="text-xl font-bold text-gray-900!">
+                {offer.title}
+              </h3>
               <p className="text-sm text-[var(--primary)] mb-2">
                 {offer.subtitle}
               </p>

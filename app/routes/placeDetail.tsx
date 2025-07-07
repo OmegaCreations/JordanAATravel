@@ -21,17 +21,15 @@ export default function PlaceDetail() {
           alt={place.name}
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 z-0" />
-        <div className="relative z-10 px-4 max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {place.name}
-          </h1>
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-b z-0" />
       </div>
 
       {/* Treść */}
       <div className="max-w-3xl mx-auto px-4 py-16">
-        <Link to="/places" className="text-blue-600 hover:underline">
+        <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          {place.name}
+        </h1>
+        <Link to="/places" className="back-to-btn text-sm mb-6">
           ← Back to the gallery
         </Link>
 
