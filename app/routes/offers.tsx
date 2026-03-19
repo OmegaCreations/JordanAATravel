@@ -31,13 +31,13 @@ export default function Offers() {
           <Link
             key={offer.id}
             to={`/offers/${offer.id}`}
-            className="block rounded-lg overflow-hidden shadow hover:shadow-xl transition"
+            className="block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#7e5833]/20 hover:border-[#7e5833]/40 bg-white"
           >
-            <div className="aspect-[4/3]">
+            <div className="bg-gradient-to-b from-gray-50 to-white p-4 flex items-center justify-center min-h-[400px]">
               <img
                 src={offer.imageUrl}
                 alt={offer.title}
-                className="object-cover w-full h-full"
+                className="object-contain w-full h-full max-h-[400px]"
               />
             </div>
             <div className="p-4">

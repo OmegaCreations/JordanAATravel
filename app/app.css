@@ -33,21 +33,21 @@ body {
   --marker-size: 8px;
   --track-height: 1px;
 
-  --primary: #bf9b79;
-  --primary_shade: #2e3532;
-  --primary_shade2: #1f2422;
+  --primary: #7e5833;
+  --primary_shade: #000000;
+  --primary_shade2: #000000;
 
   --secondary: #f7f7f7;
 
-  --orange1: #d9c4a9;
-  --orange2: #734a34;
+  --orange1: #7e5833;
+  --orange2: #7e5833;
   --red: #ce1126;
 
-  --primary_nav: #1f2422;
+  --primary_nav: #000000;
   --secondary_nav: #fff;
-  --third_nav: #1f2422;
-  --fourth_nav: #d9c4a9;
-  --active_nav: #d9c4a9;
+  --third_nav: #000000;
+  --fourth_nav: #7e5833;
+  --active_nav: #7e5833;
 }
 
 h3 {
@@ -71,7 +71,7 @@ h3 {
 }
 
 .bgImg {
-  position: absolute;
+  position: relative;
   opacity: 0.3;
 
   width: 300px;
@@ -91,7 +91,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 1;
   z-index: -1;
   background: var(--primary_nav);
 }

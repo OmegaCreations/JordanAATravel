@@ -69,7 +69,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4 md:space-x-6">
           <NavItem to="/" label="Home" onClick={closeMenu} />
           <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
-          <NavItem to="/places" label="Places" onClick={closeMenu} />
+          {/* TEMPORARILY DISABLED: Places navigation tab */}
+          {/* To re-enable: Uncomment the line below */}
+          {/* <NavItem to="/places" label="Places" onClick={closeMenu} /> */}
 
           {/* Tripadvisor Icon */}
           <a
@@ -101,7 +103,9 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <NavItem to="/" label="Home" onClick={closeMenu} />
             <NavItem to="/offers" label="Offer Plans" onClick={closeMenu} />
-            <NavItem to="/places" label="Places" onClick={closeMenu} />
+            {/* TEMPORARILY DISABLED: Places navigation tab */}
+            {/* To re-enable: Uncomment the line below */}
+            {/* <NavItem to="/places" label="Places" onClick={closeMenu} /> */}
 
             {/* Tripadvisor Icon - Mobile */}
             <a

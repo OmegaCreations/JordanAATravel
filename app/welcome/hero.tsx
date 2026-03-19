@@ -9,19 +9,12 @@ const Hero = () => {
         id="hero"
       >
         <div className={`text-center text-[var(--secondary)] px-4`}>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            <p className="!text-[var(--orange1)]">Jordan AA Trips</p>
+          <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${style.heroTitle}`}>
+            <p className={`!text-[#D6BD68] ${style.heroOrangeText}`}>Jordan AA Trips</p>
             First & Trusted since 2007
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto">
-            <b>
-              Discover the magic of{" "}
-              <span className="!text-[var(--orange1)]">Jordan</span>
-            </b>{" "}
-            — from the ancient city of{" "}
-            <span className="!text-[var(--orange1)]">Petra </span>
-            to the serene waters of the{" "}
-            <span className="!text-[var(--orange1)]">Dead Sea</span>.
+          <p className={`text-lg md:text-xl max-w-2xl mx-auto ${style.heroSubtitle}`}>
+            Private driver in Jordan Travel - <span className={`!text-[#D6BD68]`}>Your way. Comfortable. Flexible. Local.</span>
           </p>
         </div>
       </div>

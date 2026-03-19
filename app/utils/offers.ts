@@ -1,6 +1,12 @@
 import offer_historical from "../welcome/offer_historical.jpg";
 import offer_classic from "../welcome/offer_classic.jpg";
 import offer_wellness from "../welcome/offer_wellness.jpg";
+import petra1 from "../welcome/petra_1.jpg";
+import petra2 from "../welcome/petra_2.jpg";
+import petra3 from "../welcome/petra_3.jpg";
+import amman1 from "../welcome/amman_1.jpg";
+import amman2 from "../welcome/amman_2.jpg";
+import desert1 from "../welcome/desert1.jpeg";
 
 interface Offer {
   id: number;
@@ -9,6 +15,7 @@ interface Offer {
   description: string;
   places: string[];
   imageUrl: string;
+  collageImages?: string[];
 }
 
 export const offersData: Offer[] = [
@@ -23,7 +30,7 @@ export const offersData: Offer[] = [
 🔹 !#Blue Mosque (King Abdullah I Mosque) - a distinctive dome and beautiful architecture
 🔹 Rainbow Street - a walk along an atmospheric street full of cafes and restaurants
 🔹 Madaba - the famous mosaic map of the Holy Land in St. George's Church
-🔹 !#St.  John the Baptist 
+🔹 !#St.  John the Baptist
 🔹 Archaeological Museum - mosaics and finds from the Madaba region
 🔹 Mount Nebo - a viewpoint with a panoramic view of the Jordan Valley and the Dead Sea
 🔹 Jerash - the best-preserved Roman city in the Middle East
@@ -39,6 +46,7 @@ export const offersData: Offer[] = [
       "🔹"
     ),
     imageUrl: offer_classic,
+    collageImages: [petra1, desert1, amman1],
   },
   {
     id: 2,
@@ -55,7 +63,7 @@ export const offersData: Offer[] = [
 🔹 Ajloun Castle - Saladin's fortress from the 12th century
 🔹 Madaba - the famous mosaic map of the Holy Land
 🔹 Mount Nebo - Moses' viewpoint
-🔹 Baptismal Site (Al-Maghtas) - on the Jordan River
+🔹 Baptismal Site (Al Maghtas) - on the Jordan River
 🔹 !#The Royal Road - the beginning of the journey along the legendary route: a scenic drive through Wadi Mujib
 🔹 Karak Castle - an impressive Crusader fortress
 🔹 Shobak Castle - a picturesque fortress  King Baldwin I
@@ -65,6 +73,7 @@ export const offersData: Offer[] = [
         "🔹"
       ),
     imageUrl: offer_historical,
+    collageImages: [petra2, amman2, petra3],
   },
   {
     id: 3,
@@ -72,22 +81,23 @@ export const offersData: Offer[] = [
     subtitle: "",
     description:
       "Discover the vibrant capital of Jordan: the Citadel with a panoramic view, the impressive Roman Theater and the atmospheric Rainbow Street with cafes, galleries and local shops. A great place to start and first tastes of Jordanian cuisine.",
-    places: `Amman - 
+    places: `Amman -
 Discover the vibrant capital of Jordan: the Citadel with a panoramic view, the impressive Roman Theater and the atmospheric Rainbow Street with cafes, galleries and local shops. A great place to start and first tastes of Jordanian cuisine.
 
 🔹 Petra -
 One of the 7 wonders of the world - an ancient city carved into the pink rock. Walk along the Siq gorge to the famous Treasury, visit the tombs and the monumental monastery. A meeting with history that you will remember forever.
 
-🔹 Wadi Rum - 
+🔹 Wadi Rum -
 A legendary desert with red rocks.  Jeep tour on the dunes, sunset, evening bonfire and a night in a Bedouin camp under the starry sky. The proximity of nature and the silence of the desert give incredible peace.
 
-🔹 Aqaba - 
+🔹 Aqaba -
 Jordania's window to the Red Sea. Relax on the beach, swim, snorkel and dive among coral reefs. You can also sail on a glass-bottom boat and try fresh seafood in local restaurants.
 
-🔹 Dead Sea - 
+🔹 Dead Sea -
 The lowest point on Earth and a natural SPA. Bathe in salt water, natural peeling with mud rich in minerals and relax in the hotel pools overlooking the sunset. A perfect finale to the expedition.`.split(
       "🔹"
     ),
     imageUrl: offer_wellness,
+    collageImages: [desert1, petra1, amman1],
   },
 ];
