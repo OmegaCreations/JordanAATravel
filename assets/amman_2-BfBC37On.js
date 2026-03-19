@@ -1,0 +1,1 @@
+const a="/assets/petra_1-ClXVPgmf.jpg",s="/assets/petra_2-bEkig5XZ.jpg",t="/assets/petra_3-BgWlijSL.jpg",p="/assets/amman_1-DpyjwLBy.jpg",e="/assets/amman_2-BObLp-F3.jpg";export{p as a,s as b,e as c,t as d,a as p};
